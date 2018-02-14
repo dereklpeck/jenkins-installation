@@ -2,6 +2,9 @@
 
 yum update -y
 
+sudo yum install java-1.8.0 -y
+sudo yum remove java-1.7.0-openjdk
+
 wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
 rpm --import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
 yum install docker nginx git jenkins -y
