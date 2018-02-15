@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-sudo su -
-
 yum update -y
 
 yum install java-1.8.0 -y
